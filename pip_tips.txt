@@ -1,0 +1,49 @@
+====================
+USEFULL COMMANDS
+
+# Install from github
+pip install git+<github url>[@<branch tag>]
+pip install git+https://github.com/requests/requests@v2.15.0
+
+# Install from local folder
+pip install -e .                # not sure if . must be the Package dir or the parent dir / package repo dir
+
+# Upgrade package
+pip install --upgrade <package_name>
+
+# Show package version
+pip show <package_name>
+
+# Show list of installed packages
+pip list
+
+# Get list of package with version (and  can be used in requirements.txt)
+pip freeze
+pip freeze > requirements.txt
+
+
+
+
+
+
+
+
+
+====================
+OTHER COMMANDS:
+
+# Install package
+pip install <package_name>
+pip install <package_name>==<version> <package_name>==<version> ...
+
+# Uninstall package
+pip uninstall <package_name> [-y]
+
+# From zip, with a compressed directory containing setup.py.
+pip install path/to/zipfile.zip
+
+# upgrade pip
+pip install --upgrade pip
+
+# Check dependencies
+pip check
