@@ -42,7 +42,8 @@ from packageName.module import file1
 from packageName import file2
 ```
 
-
+## In summary
+You need to run "pip install -e ." in a folder containing setup.py + the package (addone/ for example)
 
 # With Git
 
