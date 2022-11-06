@@ -1,4 +1,4 @@
-# Gym environment
+# Create a custom gym environment
 
 This contains the files for the gym environment. The environment is based on the [OpenAI Gym](https://gym.openai.com/) framework.
 
@@ -31,3 +31,22 @@ This will just import the env classes so that they are available in the package,
 
 ## package_MyCustomGymEnvs/envs/riverEnv_v0.py
 Each file inside envs/ will contain a gym.Env class that have to be imported in the init file. 
+
+
+# Install the package
+
+To install the package, you have to be in the folder that contains the setup.py file. Then, you can install the package with the command `pip install -e .` (the dot is important). This will install the package in editable mode, so that you can modify the files and the changes will be taken into account when you import the package.
+
+
+# Use the gym env package
+
+Once the package is installed, you can import it in your code. For example, if you want to use the riverEnv_v0 environment, you can do:
+
+```python
+# Import riverEnv_v0 (along with other envs)
+import package_MyCustomGymEnvs
+# Create the environment
+env = gym.make('riverEnv-v0')
+```
+
+ 
