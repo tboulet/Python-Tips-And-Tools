@@ -14,7 +14,7 @@ package_PackageName/
         module/      
         file2.py    
 
-    # Contain the setup script, check package_AddOne/setup.py for example  
+    # Contain the setup script, check project_880/setup.py for a good example
     setup.py     
     
     # Facultative other files
@@ -44,6 +44,27 @@ from packageName import file2
 
 ## In summary
 You need to run "pip install -e ." in a folder containing setup.py + the package (addone/ for example)
+
+## setup.py content
+This is the standard setup.py file for a package.
+```python
+from setuptools import setup, find_namespace_packages
+
+setup(
+    name="tboulet_test_package880",
+    url="https://github.com/tboulet/Python-Tips-And-Tools", 
+    author="Timothé Boulet",
+    author_email="dummy@gmail.com",
+    
+    packages=find_namespace_packages(),
+
+    version="0.0.4",
+    license="MIT",
+    description="My first Python package",
+    long_description=open('README.md').read(),      # markdown
+    long_description_content_type="text/markdown",  # markdown
+)
+```
 
 # With Git
 

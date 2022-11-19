@@ -1,7 +1,7 @@
 from setuptools import setup, find_namespace_packages
 
 setup(
-    name="tboulet_test_package890",
+    name="tboulet_test_package880",
     url="https://github.com/tboulet/Python-Tips-And-Tools", 
     author="T. B.",
     author_email="dummy@gmail.com",
