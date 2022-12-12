@@ -29,4 +29,10 @@ python -m streamlit my_app.py
 
 ## Deploy your app to Streamlit servers
 
-Once you are happy with your app, you can deploy it to Streamlit servers. Go on [Streamlit sharing](https://share.streamlit.io/), click on "New app"
+Once you are happy with your app, you can deploy it to Streamlit servers. Go on [Streamlit sharing](https://share.streamlit.io/), click on "New app" and fill the form. You will be asked to provide a link to your app on GitHub. Once the app is deployed, you will be given a link to your app, it can be shared with anyone. The app is automatically reloaded each time you push a new version to GitHub. 
+
+<p align="center">
+  <img src="streamlit.png" width="60%"/>
+</p>
+
+Remark : Streamlit regularly put unused app to sleep.
