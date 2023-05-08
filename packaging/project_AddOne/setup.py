@@ -1,9 +1,16 @@
-import setuptools
+from setuptools import setup, find_namespace_packages
 
-setuptools.setup(
-    name="addone",                      # This is the name of the package
-    version="0.0.3",                    
+setup(
+    name="test_addone",
+    url="https://github.com/tboulet/Python-Tips-And-Tools/packaging/project_AddOne", 
+    author="tboulet",
+    author_email="dummy@gmail.com",
+    
+    packages=find_namespace_packages(),
+
+    version="0.0.4",
+    license="MIT",
     description="My first Python package",
-    packages=setuptools.find_packages(),
-    # python_requires='>=3.7',
+    long_description=open('README.md').read(),     
+    long_description_content_type="text/markdown", 
 )

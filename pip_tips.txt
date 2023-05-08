@@ -6,7 +6,7 @@ pip install git+<github url>[@<branch tag>]
 pip install git+https://github.com/requests/requests@v2.15.0
 
 # Install from local folder
-pip install -e .                # not sure if . must be the Package dir or the parent dir / package repo dir
+pip install -e .           
 
 # Upgrade package
 pip install --upgrade <package_name>
